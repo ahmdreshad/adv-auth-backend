@@ -27,10 +27,10 @@ const sendEmail = async (
   const handlearOptions = {
     viewEngine: {
       extName: '.handlebars',
-      partialsDir: path.resolve('./views'),
+      partialsDir: path.resolve(__dirname, './views'),
       defaultLayout: false,
     },
-    viewPath: path.resolve('./views'),
+    viewPath: path.resolve(__dirname, './views'),
     extName: '.handlebars',
   }
 
