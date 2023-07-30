@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer')
 const hbs = require('nodemailer-express-handlebars')
-const path = require('node:path')
+const path = require('path')
 
 const sendEmail = async (
   subject,
@@ -27,10 +27,10 @@ const sendEmail = async (
   const handlearOptions = {
     viewEngine: {
       extName: '.handlebars',
-      partialsDir: path.resolve('../views'),
+      partialsDir: path.join('../views'),
       defaultLayout: false,
     },
-    viewPath: path.resolve('../views'),
+    viewPath: path.join('../views'),
     extName: '.handlebars',
   }
 
